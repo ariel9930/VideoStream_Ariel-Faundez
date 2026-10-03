@@ -6,9 +6,15 @@
 }
 
 /*navbar*/
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .imagen-youtube img {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
 }
 
 .buscador img {
@@ -16,23 +22,168 @@
     height: 30px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.explorar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.explorar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.imagen-youtube {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rojo {
+    color: red;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.buscador input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(129, 128, 128);
+}
+
 /*navbar*/
 
 
 /*container*/
+
 /*lagos y montañas*/
+.lagos-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.añadir_cola {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.likes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dislikes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.compartir {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Añadir-cola {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.Añadir-cola img {
+    width: 20px;
+    height: auto;
+}
+
 .añadir_cola img {
     height: 20px;
     width: 20px;
 }
 
-.Video_Stream-perfil img {
-    height: 75px;
-    width: 80px;
-    border-radius: 50%;
+/*lagos y montañas*/
+
+
+/*videoStreamperfil*/
+.Video-Stream-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/*lagos y montañas*/
+.stream {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stream img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.videostream-texto h3,
+.videostream-texto p {
+    margin: 0;
+}
+
+.suscribirse-boton button{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.recorrido{
+    text-decoration: underline;
+}
+
+.info-video{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.azulito{
+    color: #0556ac;
+    font-weight: bold;
+}
+/*videoStreamperfil*/
+
+
+
 
 
 /*siguiente en la cola*/
@@ -40,7 +191,27 @@
     width: 200px;
 }
 
+.recomendados img {
+    width: 200px;
+}
 
+.imagen-mas img {
+    width: 50px;
+}
 
 /*siguiente en la cola*/
+
+
+/*Mas videos*/
+.Más_videos img {
+    width: 250px;
+    height: 130px;
+}
+
+
+
+
+
+
+/*Mas videos*/
 /*container*/
