@@ -28,6 +28,7 @@
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
+    font-size: 19px;
 }
 
 .explorar {
@@ -77,8 +78,11 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-size: 19px;
 }
-
+.videou video{
+width: 1000px;
+}
 .añadir_cola {
     display: flex;
     gap: 25px;
@@ -122,8 +126,8 @@
 }
 
 .añadir_cola img {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 /*lagos y montañas*/
@@ -145,8 +149,8 @@
 }
 
 .stream img {
-    width: 60px;
-    height: 60px;
+    width: 70;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -154,26 +158,34 @@
 .videostream-texto h3,
 .videostream-texto p {
     margin: 0;
+    font-size: 20px;
 }
-
+.videostream-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .suscribirse-boton button{
     background-color: red;
     color: rgb(255, 255, 255);
     border: none;
-    height: 35px;
-    width: 100px;
+    height: 45px;
+    width: 150px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 19px;
 }
 
 .recorrido{
     text-decoration: underline;
+    
 }
 
 .info-video{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+font-size: 20px;
 }
 
 .azulito{
