@@ -1,3 +1,4 @@
+/* RESET BÁSICO */
 * {
     padding: 0;
     margin: 0;
@@ -5,10 +6,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* CONTENEDOR PRINCIPAL */
 .container {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+/* NAVBAR Y BUSCADOR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 19px;
+}
+
+.imagen-youtube {
+    display: flex;
+    gap: 25px;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -17,18 +35,8 @@
     height: 40px;
 }
 
-.buscador img {
-    width: 30px;
-    height: 30px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    font-size: 19px;
+.rojo {
+    color: red;
 }
 
 .explorar {
@@ -44,17 +52,6 @@
     font-weight: bold;
 }
 
-.imagen-youtube {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.rojo {
-    color: red;
-}
-
 .buscador {
     display: flex;
     align-items: center;
@@ -62,10 +59,22 @@
     flex-wrap: wrap;
 }
 
+.buscador img {
+    width: 30px;
+    height: 30px;
+}
+
 .buscador input {
     padding: 10px;
     border-radius: 10px;
     border: solid 2px rgb(129, 128, 128);
+}
+
+/* VIDEO PRINCIPAL Y TÍTULO */
+.videou video {
+    width: 800px;
+    max-width: 100%;
+    border: solid 2px rgb(63, 62, 62);
 }
 
 .lagos-texto {
@@ -80,59 +89,35 @@
     color: rgb(92, 92, 92);
 }
 
-.videou video {
-    width: 800px;
-    border: solid 2px rgb(63, 62, 62);
-}
-
+/* BARRA DE ACCIONES (LIKES, COMPARTIR, COLA) */
 .añadir_cola {
     display: flex;
-    gap: 55px;
     align-items: center;
     justify-content: flex-end;
-    margin: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    gap: 25px;
+    margin-top: 15px;
+    width: 800px;
+    max-width: 100%;
 }
 
-.likes {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.dislikes {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.compartir {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
+.likes,
+.dislikes,
+.compartir,
 .Añadir-cola {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex-wrap: wrap;
+    font-size: 16px;
 }
 
+.añadir_cola img,
 .Añadir-cola img {
-    width: 20px;
-    height: auto;
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
 }
 
-.añadir_cola img {
-    height: 30px;
-    width: 30px;
-}
-
+/* PERFIL DEL CANAL Y BOTÓN SUSCRIBIR */
 .Video-Stream-perfil {
     display: flex;
     justify-content: space-between;
@@ -149,22 +134,22 @@
 }
 
 .stream img {
-    width: 70;
+    width: 70px;
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.videostream-texto h3,
-.videostream-texto p {
-    margin: 0;
-    font-size: 20px;
 }
 
 .videostream-texto {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.videostream-texto h3,
+.videostream-texto p {
+    margin: 0;
+    font-size: 20px;
 }
 
 .videostream-texto p {
@@ -182,11 +167,7 @@
     font-size: 19px;
 }
 
-.recorrido {
-    text-decoration: underline;
-
-}
-
+/* DESCRIPCIÓN DEL VIDEO */
 .info-video {
     display: flex;
     flex-direction: column;
@@ -196,32 +177,24 @@
     color: rgb(54, 53, 53);
 }
 
+.recorrido {
+    text-decoration: underline;
+}
+
 .azulito {
     color: #0556ac;
     font-weight: bold;
 }
 
-
-.cajas img {
-    width: 200px;
-    border: solid 2px rgb(63, 62, 62);
-}
-
-.recomendados img {
-    width: 200px;
-}
-
-.imagen-mas img {
-    width: 50px;
-}
-
+/* COLUMNA LATERAL (COLA DE REPRODUCCIÓN Y RECOMENDADOS) */
 .siguiente-cola {
     margin-left: 30px;
 }
 
 .siguiente-limpiar {
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Limpiar-cola {
@@ -234,64 +207,31 @@
     font-weight: bold;
 }
 
-.cajas {
-    margin-top: 15px;
+.cajas,
+.recomendados {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-top: 15px;
 }
 
-
-.cajita1 {
+.cajita1,
+.cajita2,
+.cajita3,
+.cajitas1,
+.cajitas2,
+.cajitas3 {
     display: flex;
+    align-items: center;
 }
 
-.cajita1 p {
-    color: rgb(92, 92, 92);
+.cajas img,
+.recomendados img {
+    width: 120px;
 }
 
-.encerrar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 15px;
-}
-
-.equis {
-    display: flex;
-    gap: 100px;
-}
-
-.x {
-    font-size: 25px
-}
-
-
-.cajita2 {
-    display: flex;
-}
-
-.cajita2 p {
-    color: rgb(92, 92, 92);
-}
-
-.encerrar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 15px;
-}
-
-.equis {
-    display: flex;
-    gap: 100px;
-}
-
-
-.cajita3 {
-    display: flex;
-}
-
+.cajita1 p,
+.cajita2 p,
 .cajita3 p {
     color: rgb(92, 92, 92);
 }
@@ -299,45 +239,28 @@
 .encerrar {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-left: 15px;
+    width: 100%;
 }
 
 .equis {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-
-.cajitas1 {
-    display: flex;
+.x {
+    font-size: 25px;
 }
 
-.cajitas2 {
-    display: flex;
-}
-
-.cajitas3 {
-    display: flex;
-}
-
-.recomendados {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.Más_videos img {
-    width: 250px;
-    height: 130px;
-    border: solid 2px rgb(63, 62, 62);
-}
-
-
-.imagen-mas img{
+.imagen-mas img {
+    width: 30px;
     border: none;
 }
 
+/* SECCIÓN INFERIOR (MÁS VIDEOS) */
 .Más_videos {
     display: flex;
     flex-direction: column;
@@ -346,33 +269,23 @@
     width: 100%;
 }
 
+.Más_videos img {
+    width: 250px;
+    height: 130px;
+    border: solid 2px rgb(63, 62, 62);
+}
 
 .cajas-mas-videos {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
-.cajita-pro1{
+
+.cajita-pro1,
+.cajita-pro2,
+.cajita-pro3,
+.cajita-pro4 {
     display: flex;
     flex-direction: column;
-    gap:10px;
-    flex-wrap: wrap;
-}
-.cajita-pro2{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    flex-wrap: wrap;
-}
-.cajita-pro3{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    flex-wrap: wrap;
-}
-.cajita-pro4{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    flex-wrap: wrap;
+    gap: 10px;
 }
