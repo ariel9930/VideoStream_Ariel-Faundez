@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*navbar*/
+
 .container {
     padding: 20px;
     display: flex;
@@ -68,28 +68,31 @@
     border: solid 2px rgb(129, 128, 128);
 }
 
-/*navbar*/
-
-
-/*container*/
-
-/*lagos y montañas*/
 .lagos-texto {
     display: flex;
     flex-direction: column;
     gap: 5px;
     font-size: 19px;
+    margin-top: 15px;
 }
-.videou video{
-width: 1000px;
+
+.lagos-texto p {
+    color: rgb(92, 92, 92);
 }
+
+.videou video {
+    width: 800px;
+    border: solid 2px rgb(63, 62, 62);
+}
+
 .añadir_cola {
     display: flex;
-    gap: 25px;
+    gap: 55px;
     align-items: center;
     justify-content: flex-end;
     margin: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .likes {
@@ -130,15 +133,12 @@ width: 1000px;
     width: 30px;
 }
 
-/*lagos y montañas*/
-
-
-/*videoStreamperfil*/
 .Video-Stream-perfil {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .stream {
@@ -160,12 +160,18 @@ width: 1000px;
     margin: 0;
     font-size: 20px;
 }
-.videostream-texto{
+
+.videostream-texto {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.suscribirse-boton button{
+
+.videostream-texto p {
+    color: rgb(48, 48, 48);
+}
+
+.suscribirse-boton button {
     background-color: red;
     color: rgb(255, 255, 255);
     border: none;
@@ -176,31 +182,29 @@ width: 1000px;
     font-size: 19px;
 }
 
-.recorrido{
+.recorrido {
     text-decoration: underline;
-    
+
 }
 
-.info-video{
-display: flex;
-flex-direction: column;
-gap: 15px;
-font-size: 20px;
+.info-video {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgb(54, 53, 53);
 }
 
-.azulito{
+.azulito {
     color: #0556ac;
     font-weight: bold;
 }
-/*videoStreamperfil*/
 
 
-
-
-
-/*siguiente en la cola*/
 .cajas img {
     width: 200px;
+    border: solid 2px rgb(63, 62, 62);
 }
 
 .recomendados img {
@@ -211,19 +215,164 @@ font-size: 20px;
     width: 50px;
 }
 
-/*siguiente en la cola*/
+.siguiente-cola {
+    margin-left: 30px;
+}
 
+.siguiente-limpiar {
+    display: flex;
+    gap: 180px;
+}
 
-/*Mas videos*/
-.Más_videos img {
-    width: 250px;
-    height: 130px;
+.Limpiar-cola {
+    background-color: #e6e6e6;
+    border: none;
+    border: solid 1px rgb(194, 191, 191);
+    height: 35px;
+    width: 90px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cajas {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 
+.cajita1 {
+    display: flex;
+}
+
+.cajita1 p {
+    color: rgb(92, 92, 92);
+}
+
+.encerrar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.equis {
+    display: flex;
+    gap: 100px;
+}
+
+.x {
+    font-size: 25px
+}
 
 
+.cajita2 {
+    display: flex;
+}
+
+.cajita2 p {
+    color: rgb(92, 92, 92);
+}
+
+.encerrar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.equis {
+    display: flex;
+    gap: 100px;
+}
 
 
-/*Mas videos*/
-/*container*/
+.cajita3 {
+    display: flex;
+}
+
+.cajita3 p {
+    color: rgb(92, 92, 92);
+}
+
+.encerrar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.equis {
+    display: flex;
+    gap: 100px;
+}
+
+
+.cajitas1 {
+    display: flex;
+}
+
+.cajitas2 {
+    display: flex;
+}
+
+.cajitas3 {
+    display: flex;
+}
+
+.recomendados {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Más_videos img {
+    width: 250px;
+    height: 130px;
+    border: solid 2px rgb(63, 62, 62);
+}
+
+
+.imagen-mas img{
+    border: none;
+}
+
+.Más_videos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+.cajas-mas-videos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cajita-pro1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.cajita-pro2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.cajita-pro3{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.cajita-pro4{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    flex-wrap: wrap;
+}
