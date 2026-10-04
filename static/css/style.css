@@ -227,7 +227,7 @@
 
 .cajas img,
 .recomendados img {
-    width: 120px;
+    width: 200px;
 }
 
 .cajita1 p,
@@ -256,7 +256,7 @@
 }
 
 .imagen-mas img {
-    width: 30px;
+    width: 50px;
     border: none;
 }
 
