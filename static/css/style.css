@@ -11,6 +11,7 @@
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    border: solid 1px rgb(201, 199, 199);
 }
 
 /* NAVBAR Y BUSCADOR */
@@ -99,7 +100,9 @@
     width: 800px;
     max-width: 100%;
 }
-
+.cajita1 video{
+    width: 200px;
+}
 .likes,
 .dislikes,
 .compartir,
@@ -108,6 +111,8 @@
     align-items: center;
     gap: 8px;
     font-size: 16px;
+        border-top: solid 1px rgb(187, 184, 184);
+            border-bottom: solid 1px rgb(187, 184, 184);
 }
 
 .añadir_cola img,
