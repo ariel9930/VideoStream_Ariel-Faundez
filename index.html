@@ -10,31 +10,41 @@
 </head>
 
 <body>
+    <!-- BARRA NAVEGACIÓN PRINCIPAL (LOGO, MENÚ Y BUSCADOR) -->
     <header>
         <nav class="navbar">
             <div class="imagen-youtube">
                 <img src="static/images/Youtube_logo.png" alt="youtube">
                 <h1>Video<span class="rojo">Stream</span></h1>
-            </div>
-            <div class="explorar">
-                <p><a href="#">Inicio</a></p>
-                <p><a href="#">Explorar</a></p>
-                <p><a href="#">Mi lista</a></p>
+                <div class="explorar">
+                    <p><a href="#">Inicio</a></p>
+                    <p><a href="#">Explorar</a></p>
+                    <p><a href="#">Mi lista</a></p>
+                </div>
             </div>
             <div class="buscador">
                 <input type="text">
                 <img src="static/images/77682.png" alt="notificacion">
-                <img src="static/images/profile_circle_icon_244573.png">
+                <img src="static/images/profile_circle_icon_244573.png" alt="perfil">
             </div>
         </nav>
     </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
+
+        <!-- SECCIÓN IZQUIERDA: REPRODUCTOR, ACCIONES Y PERFIL -->
         <section class="video-lagos">
+            <!-- Reproductor de Video -->
             <div class="videou">
-                <video src="static/video/videoplayback (2).mp4" autoplay muted loop></video>
-                <h2>Lagos y montañas</h2>
-                <p>95 mil visualizaciones - 10 abr 2024</p>
+                <video src="static/video/videoplayback%20(2).mp4" autoplay muted loop controls></video>
+                <div class="lagos-texto">
+                    <h2>Lagos y montañas</h2>
+                    <p>95 mil visualizaciones - 10 abr 2024</p>
+                </div>
             </div>
+
+            <!-- Botones de Reacciones (Likes, Compartir, Cola) -->
             <div class="añadir_cola">
                 <div class="likes">
                     <img src="static/images/like_PNG61.png" alt="like">
@@ -51,61 +61,159 @@
                 <div class="Añadir-cola">
                     <img src="static/images/add-to-queue-button_icon-icons.com_72877.webp" alt="añadir">
                     <p>Añadir cola</p>
-                    <img src="static/images/images (2).png" alt="puntos">
+                    <img src="static/images/images%20(2).png" alt="puntos">
                 </div>
             </div>
+
+            <!-- Información del Perfil / Canal -->
             <div class="Video-Stream-perfil">
-                <div class="Video_Stream-perfil">
-                    <img src="static/images/images (8).jpg" alt="trollface">
-                    <h3>VideoStream</h3>
-                    <p>1,2M de suscriptores</p>
-                    <div class="suscribirse-boton">
-                        <button id="Suscribirse" class="Suscribirse">Suscribirse</button>
+                <div class="stream">
+                    <img src="static/images/images%20(8).jpg" alt="trollface">
+                    <div class="videostream-texto">
+                        <h2>VideoStream</h2>
+                        <p>1,2 M de suscriptores</p>
                     </div>
                 </div>
+
+                <div class="suscribirse-boton">
+                    <button id="Suscribirse" class="Suscribirse">Suscribirse</button>
+                </div>
             </div>
+
+            <!-- Descripción del Video -->
             <div class="info-video">
-                <p>Un recorrido por los lagos más hermosos de la Patagonia y se pueden apreciar sus<br>Consejos,rutas y
+                <p><span class="recorrido">Un recorrido</span> por los lagos más hermosos de la Patagonia y se pueden
+                    apreciar sus<br>Consejos,rutas y
                     paisajes imperdíbles.</p>
-                <p>Mostrar más ⬇</p>
+                <p><span class="azulito">Mostrar más ⬇</span></p>
             </div>
         </section>
 
+        <!-- SECCIÓN DERECHA: COLA DE REPRODUCCIÓN Y RECOMENDADOS -->
         <section class="siguiente-cola">
             <div class="siguiente-limpiar">
-                <h3>Siguiente en la cola</h3>
+                <h2>Siguiente en la cola</h2>
                 <button class="Limpiar-cola">Limpiar cola</button>
             </div>
+
+            <!-- Lista de videos en cola -->
             <div class="cajas">
                 <div class="cajita1">
                     <img src="static/images/patagonia.png" alt="patagnia">
-                    <h3>Explorando la Patagonia</h3>
-                    <p>VideoStream<br>120 mil visualizaciones</p>
-                    <div class="equis">
-                        <h3>x</h3>
+                    <div class="encerrar">
+                        <h3>Explorando la Patagonia</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>120 mil visualizaciones</p>
+                            <div class="x">
+                                <h3>x</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="cajita2">
                     <img src="static/images/luisillo.png" alt="luisillo">
-                    <h3>Comida callejera</h3>
-                    <p>VideoStream<br>98 mil visualizaciones</p>
-                    <div class="equis">
-                        <h3>x</h3>
+                    <div class="encerrar">
+                        <h3>Comida callejera</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>108 mil visualizaciones</p>
+                            <div class="x">
+                                <h3>x</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="cajita3">
                     <img src="static/images/ciudades.png" alt="ciudades">
-                    <h3>Ciudades del mundo</h3>
-                    <p>VideoStream<br>210 mil visualizaciones</p>
-                    <div class="equis">
-                        <h3>x</h3>
+                    <div class="encerrar">
+                        <h3>Ciudades del mundo</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>210 mil visualizaciones</p>
+                            <div class="x">
+                                <h3>x</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de videos recomendados -->
+            <div class="recomendados">
+                <h2>Recomendados</h2>
+                <div class="cajitas1">
+                    <img src="static/images/rutastrekking.png" alt="">
+                    <div class="encerrar">
+                        <h3>Rutas de trekking</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>80 mil visualizaciones</p>
+                            <div class="imagen-mas">
+                                <img src="static/images/masmas.webp" alt="mas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cajitas2">
+                    <img src="static/images/patagonica-fauna.png" alt="patagonica-fauna">
+                    <div class="encerrar">
+                        <h3>Fauna patagónica</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>60 mil visualizaciones</p>
+                            <div class="imagen-mas">
+                                <img src="static/images/masmas.webp" alt="mas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cajitas3">
+                    <img src="static/images/atardeceres.png" alt="atardeceres">
+                    <div class="encerrar">
+                        <h3>Atardeceres increíbles</h3>
+                        <div class="equis">
+                            <p>VideoStream<br>72 mil visualizaciones</p>
+                            <div class="imagen-mas">
+                                <img src="static/images/masmas.webp" alt="mas">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- SECCIÓN INFERIOR: TARJETAS DE MÁS VIDEOS -->
+        <section class="Más_videos">
+            <h3>Más videos</h3>
+
+            <div class="cajas-mas-videos">
+                <div class="cajita-pro1">
+                    <img src="static/images/rutastrekking.png" alt="trekking">
+                    <h3>Rutas de trekking</h3>
+                    <p>VideoStream<br>80 mil visualizaciones</p>
+                </div>
+
+                <div class="cajita-pro2">
+                    <img src="static/images/lagos.png" alt="lagos">
+                    <h3>Lagos y montañas</h3>
+                    <p>VideoStream<br>95 mil visualizaciones</p>
+                </div>
+
+                <div class="cajita-pro3">
+                    <img src="static/images/patagonica-fauna.png" alt="patagonica-fauna">
+                    <h3>Fauna patagónica</h3>
+                    <p>VideoStream<br>60 mil visualizaciones</p>
+                </div>
+
+                <div class="cajita-pro4">
+                    <img src="static/images/viajesppp.png" alt="viajes">
+                    <h3>Consejos para viajar</h3>
+                    <p>VideoStream<br>110 mil visualizaciones</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <script src="static/js/script.js"></script>
 </body>
 

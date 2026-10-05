@@ -1,3 +1,4 @@
+/* RESET BÁSICO */
 * {
     padding: 0;
     margin: 0;
@@ -5,10 +6,58 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*navbar*/
+/* CONTENEDOR PRINCIPAL */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px rgb(201, 199, 199);
+}
+
+/* NAVBAR Y BUSCADOR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 19px;
+}
+
+.imagen-youtube {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .imagen-youtube img {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
+}
+
+.rojo {
+    color: red;
+}
+
+.explorar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.explorar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
 .buscador img {
@@ -16,31 +65,231 @@
     height: 30px;
 }
 
-/*navbar*/
-
-
-/*container*/
-/*lagos y montañas*/
-.añadir_cola img {
-    height: 20px;
-    width: 20px;
+.buscador input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(129, 128, 128);
 }
 
-.Video_Stream-perfil img {
-    height: 75px;
-    width: 80px;
+/* VIDEO PRINCIPAL Y TÍTULO */
+.videou video {
+    width: 800px;
+    max-width: 100%;
+    border: solid 2px rgb(63, 62, 62);
+}
+
+
+.lagos-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.lagos-texto p {
+    color: rgb(92, 92, 92);
+}
+
+/* BARRA DE ACCIONES (LIKES, COMPARTIR, COLA) */
+.añadir_cola {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 15px;
+    width: 800px;
+    max-width: 100%;
+}
+
+.likes,
+.dislikes,
+.compartir,
+.Añadir-cola {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+        border-top: solid 1px rgb(187, 184, 184);
+            border-bottom: solid 1px rgb(187, 184, 184);
+}
+
+.añadir_cola img,
+.Añadir-cola img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+}
+
+/* PERFIL DEL CANAL Y BOTÓN SUSCRIBIR */
+.Video-Stream-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.stream {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stream img {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-/*lagos y montañas*/
+.videostream-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
+.videostream-texto h3,
+.videostream-texto p {
+    margin: 0;
+    font-size: 20px;
+}
 
-/*siguiente en la cola*/
-.cajas img {
+.videostream-texto p {
+    color: rgb(48, 48, 48);
+}
+
+.suscribirse-boton button {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* DESCRIPCIÓN DEL VIDEO */
+.info-video {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgb(54, 53, 53);
+}
+
+.recorrido {
+    text-decoration: underline;
+}
+
+.azulito {
+    color: #0556ac;
+    font-weight: bold;
+}
+
+/* COLUMNA LATERAL (COLA DE REPRODUCCIÓN Y RECOMENDADOS) */
+.siguiente-cola {
+    margin-left: 30px;
+}
+
+.siguiente-limpiar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Limpiar-cola {
+    background-color: #e6e6e6;
+    border: none;
+    border: solid 1px rgb(194, 191, 191);
+    height: 35px;
+    width: 90px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cajas,
+.recomendados {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.cajita1,
+.cajita2,
+.cajita3,
+.cajitas1,
+.cajitas2,
+.cajitas3 {
+    display: flex;
+    align-items: center;
+}
+
+.cajas img,
+.recomendados img {
     width: 200px;
 }
 
+.cajita1 p,
+.cajita2 p,
+.cajita3 p {
+    color: rgb(92, 92, 92);
+}
 
+.encerrar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    width: 100%;
+}
 
-/*siguiente en la cola*/
-/*container*/
+.equis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.x {
+    font-size: 25px;
+}
+
+.imagen-mas img {
+    width: 50px;
+    border: none;
+}
+
+/* SECCIÓN INFERIOR (MÁS VIDEOS) */
+.Más_videos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.Más_videos img {
+    width: 250px;
+    height: 130px;
+    border: solid 2px rgb(63, 62, 62);
+}
+
+.cajas-mas-videos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cajita-pro1,
+.cajita-pro2,
+.cajita-pro3,
+.cajita-pro4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
